@@ -26,3 +26,11 @@ services:
     ports:
       - 3800:3000
     command: bash -c "npm i && npm i -g nodemon && npm i -g pm2 && nodemon server.js"
+  python:
+    container_name: jodd_modis
+    build: ./python
+    depends_on:
+      - postgis
+    volumes:
+      - ./python:/app/python
+    command: bash -c "cd pymodis && python3 app.py"
