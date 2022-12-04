@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parking Lot</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./bootstrap.min.css" class="css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+
+
+<body>
+    <style>
+        body {
+            background-color: #ffe7ab;
+            background-image: url(./bg_yellow.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    </style>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><b>CMU Smart Parking</b></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01"
+                aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarColor01">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./parkinglot.html">PARKING
+                            <span class="visually-hidden">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./navigation.html">NAVIGATION</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                            aria-haspopup="true" aria-expanded="false">MENU</a>
+                        <div class="dropdown-menu" style="background-color: #ffff;">
+                            <a class="dropdown-item" href="./index.html">HOME</a>
+                            <a class="dropdown-item" href="./parkinglot.html">PARKING</a>
+                            <a class="dropdown-item" href="./navigation.html">NAVIGATION</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="./index.html">CMU Smart Parking</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="card col-md-6 mb-2" style="width: 250px; " margin='auto;'>
+        <p></p>
+        <center><img src="./soccmu.png" width="250px;" margin='auto;'>
+        </center>
+        <p></p>
+        <center><span id="park-st-total" style="color: red;"></span>
+            <p><span id="park-st-free" style="color: green;"></span></p>
+        </center>
+        <p></p>
+        <a class="btn" href="./navigation.html">ลานจอดรถคณะสังคมศาสตร์</a>
+        <p></p>
+    </div>
+
+
+
+    <!-- <header style="width: 1024px">
+        <nav>
+            <div class="container">
+                <div class="nav-grid">
+                    <div class="logo">
+                        <h1>CMU Smart Parking</h1>
+                        <span>
+                            การพัฒนาระบบสนับสนุนตัดสินใจต้นทุนต่ำสำหรับบริการ ที่จอดรถในมหาวิทยาลัยเชียงใหม่ (
+                            Development of a low-cost decision support system for parking in Chiang Mai
+                            University )
+                        </span>
+                    </div>
+                    <ul class="menu">
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./parkinglot.html"><b>Parking Lot</b></a></li>
+                        <li><a href="./navigation.html">Navigation</a></li> -->
+    <!-- <li><a href="#">MENU</a></li> -->
+    <!-- <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                                aria-haspopup="true" aria-expanded="false">MENU</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="./index.html">Home</a>
+                                <a class="dropdown-item" href="./parkinglot.html">Parking Lot</a>
+                                <a class="dropdown-item" href="./navigation.html">Navigation</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="http://localhost:3000/index.html">CMU SMART
+                                    PARKING</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header> -->
+
+
+
+
+    <!-- <table align="center">
+        <tr>
+            <td>
+                <br>
+                <br>
+                <br>
+                <br>
+                <form class="d-flex">
+                    <div class="card mb-3">
+                        <h3 class="card-header">ลานจอดรถคณะนิติศาสตร์</h3>
+                        <!-- <div class="card-body">
+                                        <h5 class="card-title">Special title treatment</h5>
+                                        <h6 class="card-subtitle text-muted">Support card subtitle</h6>
+                                    </div> -->
+    <!-- <video width="650" height="650" controls>
+                                        <source src="./Fenne Lily - 'Car Park' (Official Audio).mp4\" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video> -->
+    <!-- <svg xmlns="http://www.w3.org/2000/svg" class="d-block user-select-none"
+                                        width="100%" height="200" aria-label="Placeholder: Image cap" focusable="false"
+                                        role="img" preserveAspectRatio="xMidYMid slice" viewBox="0 0 318 180"
+                                        style="font-size:1.125rem;text-anchor:middle">
+                                        <rect width="100%" height="100%" fill="#868e96"></rect>
+                                        <text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text>
+                                    </svg> -->
+    <!-- <div class="card-body">
+        <p class="card-text">สถานะลานจอดรถ</p>
+
+        <a class="btn btn-secondary" href="./navigation.html">เลือก</a> -->
+    <!-- <a class="btn btn-success" href="./navigation.html?a=1">ลานจอด 1</a>
+                                        <a class="btn btn-success" href="./navigation.html?a=2">ลานจอด 2</a>
+                                        <a class="btn btn-success" href="./navigation.html?a=3">ลานจอด 3</a> -->
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="./parkinglot.js"></script>
+
+</html>

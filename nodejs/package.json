@@ -1,0 +1,21 @@
+{
+  "name": "499project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "499"
+  ],
+  "author": "Chatchawan Khamkhuna",
+  "license": "MIT",
+  "dependencies": {
+    "db": "^3.4.0",
+    "express": "^4.18.1",
+    "nodemon": "^2.0.19",
+    "pg": "^8.8.0",
+    "socket.io": "^4.5.1"
+  }
+}
