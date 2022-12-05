@@ -25,7 +25,7 @@ RUN apt-get update && apt-get install -y python3-opencv
 RUN pip install numpy
 RUN pip install GDAL
 # RUN pip install -U flask-cors
-RUN pip install cvzone
+RUN pip install cvzone3
 RUN pip install psycopg2
 RUN pip install requests
 RUN pip install slugify
