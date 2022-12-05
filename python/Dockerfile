@@ -20,14 +20,13 @@ RUN apt install nano -y
 RUN apt update && apt-get install wget -y
 RUN apt update && apt install curl -y
 
-# Install pip reqs
-# RUN pip install flask
+RUN apt-get update && apt-get install -y python3-opencv 
+
 RUN pip install numpy
 RUN pip install GDAL
 # RUN pip install -U flask-cors
 RUN pip install cvzone
 RUN pip install psycopg2
-RUN pip install opencv-python
 RUN pip install requests
 RUN pip install slugify
 RUN pip install schedule
